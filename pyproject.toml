@@ -11,11 +11,18 @@ authors = [
 description = "AAML parser"
 readme = "README.md"
 requires-python = ">=3.14"
+license = {text = "MIT"}
 classifiers = [
     "Programming Language :: Python :: 3",
-    "License :: OSI Approved :: MIT License",
     "Operating System :: OS Independent",
+]
+dependencies = [
+    "mkdocstrings[python]>=1.0.3",
+    "zensical>=0.0.24",
 ]
 
 [project.urls]
 "Homepage" = "https://github.com/INiNiDS/aam-py"
+
+[tool.setuptools.packages.find]
+include = ["aam_py*"]

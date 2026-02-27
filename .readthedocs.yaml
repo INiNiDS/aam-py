@@ -1,0 +1,19 @@
+version: 2
+
+build:
+  os: ubuntu-24.04 # Используем свежую версию ОС
+  tools:
+    python: "3.14" # Твоя версия из логов uv
+
+# Инструкции по установке зависимостей через uv
+commands:
+  - curl -LsSf https://astral.sh/uv/install.sh | sh
+  - $HOME/.cargo/bin/uv sync --all-extras --dev
+  - $HOME/.cargo/bin/uv run zensical build --site-dir _build/html
+
+# Указываем RTD, где забрать готовый статический сайт
+formats: []
+python:
+  install:
+    - method: pip
+      path: .
