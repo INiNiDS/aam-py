@@ -9,7 +9,7 @@ build:
 mkdocs:
   configuration: mkdocs.yml
 
-commands:
+build.commands:
   - curl -LsSf https://astral.sh/uv/install.sh | sh
   - $HOME/.cargo/bin/uv sync --all-extras --dev --no-install-project
   - $HOME/.cargo/bin/uv run zensical build --site-dir $READTHEDOCS_OUTPUT/html
