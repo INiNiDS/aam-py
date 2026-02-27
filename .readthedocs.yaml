@@ -5,6 +5,9 @@ build:
   tools:
     python: "3.14" 
 
+sphinx:
+  configuration: null
+  
 commands:
   - curl -LsSf https://astral.sh/uv/install.sh | sh
   - $HOME/.cargo/bin/uv sync --all-extras --dev
