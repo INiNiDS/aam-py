@@ -1,0 +1,9 @@
+[project]
+name = "aam-py"
+version = "0.1.0"
+description = "Add your description here"
+requires-python = ">=3.14"
+dependencies = []
+
+[project.urls]
+Homepage = "https://github.com/INiNiDS/aam-py"
