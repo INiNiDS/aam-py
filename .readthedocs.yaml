@@ -8,10 +8,4 @@ build:
 commands:
   - curl -LsSf https://astral.sh/uv/install.sh | sh
   - $HOME/.cargo/bin/uv sync --all-extras --dev
-  - $HOME/.cargo/bin/uv run zensical build --site-dir _build/html
-
-formats: []
-python:
-  install:
-    - method: pip
-      path: .
+  - $HOME/.cargo/bin/uv run zensical build --site-dir $READTHEDOCS_OUTPUT/html
