@@ -5,11 +5,8 @@ build:
   tools:
     python: "3.12"
 
-
-mkdocs:
-  configuration: mkdocs.yml
-
-build.commands:
-  - curl -LsSf https://astral.sh/uv/install.sh | sh
-  - $HOME/.cargo/bin/uv sync --all-extras --dev --no-install-project
-  - $HOME/.cargo/bin/uv run zensical build --site-dir $READTHEDOCS_OUTPUT/html
+build:
+  commands:
+    - curl -LsSf https://astral.sh/uv/install.sh | sh
+    - $HOME/.cargo/bin/uv sync --all-extras --dev --no-install-project
+    - $HOME/.cargo/bin/uv run zensical build --site-dir $READTHEDOCS_OUTPUT/html
