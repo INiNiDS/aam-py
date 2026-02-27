@@ -1,9 +1,21 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
 [project]
 name = "aam-py"
 version = "0.1.0"
-description = "Add your description here"
+authors = [
+  { name="INiNiDS", email="ininids@ininids.in.rs" },
+]
+description = "AAML parser"
+readme = "README.md"
 requires-python = ">=3.14"
-dependencies = []
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
 
 [project.urls]
-Homepage = "https://github.com/INiNiDS/aam-py"
+"Homepage" = "https://github.com/INiNiDS/aam-py"
