@@ -7,4 +7,4 @@ build:
   commands:
     - curl -LsSf https://astral.sh/uv/install.sh | sh
     - $HOME/.local/bin/uv sync --all-extras --dev --no-install-project
-    - $HOME/.local/bin/uv run zensical build --site-dir $READTHEDOCS_OUTPUT/html
+    - $HOME/.local/bin/uv run zensical build -d $READTHEDOCS_OUTPUT/html
